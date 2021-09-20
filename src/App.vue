@@ -1,4 +1,5 @@
 <template>
+<h1 class='header-style'> Project JS </h1>
   <div>
     <Header />
     <Partner />
@@ -20,10 +21,13 @@ export default {
       Cart
     }
 }
+
 </script>
 
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -62,5 +66,9 @@ export default {
   button:hover {
     transform: scale(0.98);
   }
+
+.header-style {
+  font-family: 'Grechen Fuemen', cursive;
+}
 
 </style>
