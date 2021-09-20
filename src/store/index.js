@@ -22,7 +22,7 @@ export default createStore({
   },
   actions: {
     async newPartner({commit}) {
-      const res = await fetch('https://randomuser.me/api/?gender=female')
+      const res = await fetch('https://randomuser.me/api/')
       const { results } = await res.json()
       commit('updatePartner', results[0])
     }

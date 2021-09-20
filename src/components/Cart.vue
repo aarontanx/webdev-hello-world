@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1> Shortlisted ladies: </h1>
+        <h1> Shortlisted partner: </h1>
         <h3 :key='partner' v-for="partner in $store.state.cartList">
             {{ partner }} 
         </h3>
