@@ -2,7 +2,7 @@
     <div class="container">
         <h1> Shortlisted ladies: </h1>
         <li :key='partner' v-for="partner in $store.state.cartList">
-            {{ partner }}
+            {{ partner }} 
         </li>
     </div>
 </template>
@@ -22,6 +22,19 @@ export default {
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
-  background-color: white;
+  /* background-color: white; */
+  background: #f4f4f4;
+}
+.li {
+  /* background: #f4f4f4; */
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.li h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 </style>
