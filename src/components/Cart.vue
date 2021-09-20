@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <h1> Shortlisted ladies: </h1>
-        <li :key='partner' v-for="partner in $store.state.cartList">
+        <h3 :key='partner' v-for="partner in $store.state.cartList">
             {{ partner }} 
-        </li>
+        </h3>
     </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
   cursor: pointer;
 }
 
-.li h3 {
+.h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
